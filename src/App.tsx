@@ -3,18 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  let myString: string = "wisldkfhs"
-  let myNumber: number = 548
-
+  let myArray1: number[] = [1, 2, 3];
+  let myArray2: Array<number> = [1, 2, 3]
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          The value of {myString} has type {typeof myString}.
+        The value of {myArray1} has type {typeof myArray1}.
         </p>
         <p>
-        The value of {myNumber} has type {typeof myNumber}.
+        The value of {myArray2} has type {typeof myArray2}.
         </p>
       </header>
     </div>
