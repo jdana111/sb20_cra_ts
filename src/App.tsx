@@ -1,20 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  let myArray1: number[] = [1, 2, 3];
-  let myArray2: Array<number> = [1, 2, 3]
+  enum FontColor {
+    Navy = '#000080',
+    Red = '	#FF0000',
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        The value of {myArray1} has type {typeof myArray1}.
+        <p style={{color: FontColor.Navy}}>
+          The value of 'FontColor.Navy' {FontColor.Navy}.
         </p>
-        <p>
-        The value of {myArray2} has type {typeof myArray2}.
-        </p>
+        <p></p>
       </header>
     </div>
   );
