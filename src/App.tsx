@@ -1,17 +1,14 @@
 import React from "react";
+import Message from './Message';
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  let myVar: any = 3;
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          The value of 'myVar' = {myVar} and the type is {typeof myVar}.
-        </p>
-        <p></p>
+        <Message message="Message from App.tsx" />
       </header>
     </div>
   );
