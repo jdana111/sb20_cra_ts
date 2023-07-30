@@ -3,16 +3,13 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  enum FontColor {
-    Navy = '#000080',
-    Red = '	#FF0000',
-  }
+  let myVar: any = 3;
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{color: FontColor.Navy}}>
-          The value of 'FontColor.Navy' {FontColor.Navy}.
+        <p>
+          The value of 'myVar' = {myVar} and the type is {typeof myVar}.
         </p>
         <p></p>
       </header>
