@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Message message="Message from App.tsx" />
+        <Message name="Johnny" message="Message from App.tsx" />
       </header>
     </div>
   );
